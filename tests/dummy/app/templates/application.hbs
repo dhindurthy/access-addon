@@ -1,3 +1,35 @@
-<h2 id="title">Welcome to Ember</h2>
+<!-- <h2 id="title">Welcome to Ember</h2> -->
 
-{{outlet}}
+<!-- {{outlet}} -->
+
+<!-- {{aa-textfield value="Test - Its working"}} -->
+
+<!-- {{#link-to "index" class="span3 btn  btn-block"}}
+	Components
+{{/link-to}}
+
+{{#link-to 'textfield'}}Textfield{{/link-to}} -->
+<section class="blue">
+    <header class="app-header">
+      <h2>access-addon</h2>
+    </header>
+    		
+    	{{#link-to "index" class="span3 btn  btn-block"}}
+    		Components
+        {{/link-to}}
+		<select class="aa-themes">
+			<option value="">Select a theme</option>
+			<option selected value="blue">Blues</option>
+			<option value="red">Reds</option>
+			<option value="green">Greens</option>
+		</select>
+		<select class="aa-lang">
+			<option value="">Select a lang</option>
+			<option selected value="en">En</option>
+			<option value="fr">Fr</option>
+			<option value="ru">Ru</option>
+		</select>
+    <article class="aa-component-example">
+    	{{outlet}}
+    </article>
+</section>

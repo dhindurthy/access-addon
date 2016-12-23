@@ -1,0 +1,12 @@
+<ul class="aa-component-list" model={{model}}>
+<li>{{#link-to 'textfield'}}Textfield{{/link-to}}</li>
+<li>{{#link-to 'section'}}Section{{/link-to}}</li>
+<li>{{#link-to 'header'}}Header{{/link-to}}</li>
+<li>{{#link-to 'footer'}}Footer{{/link-to}}</li>
+<li>{{#link-to 'draganddrop'}}Drag and Drop{{/link-to}}</li>
+<li>{{#link-to 'tooltip'}}Tooltip{{/link-to}}</li>
+<li>{{#link-to 'hierarchy'}}Hierarchy{{/link-to}}</li>
+{{#each item in model}}
+		<li>{{#link-to item.path}}{{item.name}}{{/link-to}}</li>
+{{/each}}
+</ul>
