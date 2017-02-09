@@ -22,3 +22,7 @@ This README outlines the details of collaborating on this Ember addon.
 ## Building
 
 * `ember build`
+
+##Note
+
+*This web app is developed in an intention of using the features provided by various technologies and not intended towards moving to a production environment. 
