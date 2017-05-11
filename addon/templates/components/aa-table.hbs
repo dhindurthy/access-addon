@@ -1,0 +1,27 @@
+{{yield}}
+<table class="table" id="{{tableId}}">
+<thead>
+  <tr>
+    {{#each headers as |header|}}
+      <th>{{header.title}}
+        <span>
+          {{#if showSort}}
+           {{aa-sort initialSort=header.defaultSort sortParam=header.param isReset=header.resetSort sortBy="sortBy" isDisabled=disableSort }}
+          {{/if}}
+        </span>
+      </th>
+    {{/each}}
+  </tr>
+</thead>
+<tbody>
+{{#each sortedData as |row|}}
+  <tr id="{{row.name}}">
+    {{#each headers as |header|}}
+      <td id="{{header.param}}">
+          {{get row header.param}}
+      </td>
+    {{/each}}
+  </tr>
+{{/each}}
+</tbody>
+</table>
